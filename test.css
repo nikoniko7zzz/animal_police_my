@@ -1,0 +1,45 @@
+    body {
+      display: flex;
+      justify-content: center;
+    }
+    .Transfer_container {
+      width: 960px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:center;
+      align-content:flex-start;
+      /* align-items: center; */
+      padding: 10px;
+    }
+    .box_big {
+      background-color: #FFD700;
+      display:flex;
+      justify-content:center;
+      align-items: center;
+      height: 210px;
+      width: 280px;
+      padding: 10px;
+      margin: 10px;
+    }
+    .box {
+      display:flex;
+      justify-content:center;
+      align-items: center;
+    }
+    .photo {
+      height: 200px;
+      width: 130px;
+      background-color: gray;
+      margin-right: 10px;
+    }
+    .vertical {
+      height: 200px;
+      width: 130px;
+    }
+    .vertical p {
+      margin: 0;
+    }
+
+  
+
