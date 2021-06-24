@@ -1,14 +1,6 @@
 <?php
 include('functions.php');
 
-if (
-  !isset($_POST['username']) || $_POST['username'] == '' ||
-  !isset($_POST['username']) || $_POST['username'] == ''
-) {
-  echo json_encode(["error_msg" => "no input"]);
-  exit();
-}
-
 $username = $_POST["username"];
 $password = $_POST["password"];
 
@@ -28,7 +20,7 @@ if ($status == false) {
 
 if ($stmt->fetchColumn() > 0) {
   echo "<p>すでに登録されているユーザです．</p>";
-  echo '<a href="login.php">login</a>';
+  echo '<a href="login.php">ログイン画面へ</a>';
   exit();
 }
 
@@ -44,6 +36,6 @@ if ($status == false) {
   echo json_encode(["error_msg" => "{$error[2]}"]);
   exit();
 } else {
-  header("Location:login.php");
+  header("Location:login_register_ok.html");
   exit();
 }

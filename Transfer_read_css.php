@@ -102,10 +102,11 @@ if ($status == false) {
 
 <body>
   <header>
-    <h1>譲渡会</h1>
+    <h1 class="aaa">譲渡会</h1>
     <a href="Transfer_input.php">入力画面</a>
     <a href="logout.php">logout</a>
   </header>
+  <p class="bbb" hidden>テスト</p>
   <div class=Transfer_container>
     <?= $output ?>
   </div>
@@ -113,24 +114,14 @@ if ($status == false) {
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
+    if ($('.transfer_output').text() = "譲渡済") {
+      $('.bbb').show();
 
-    // if ($('.transfer_output').val() = "譲渡済") {
-
-    // if ($('.transfer_output').val() = "譲渡済") {
-    //   console.log("出力すみ")
-      $('.transfer_mark').hidden();
-    //   // $('.transfer_mark').show();
-
-    // }
-
-    // $("#fairy").attr("src", fairy_img).addClass('open');
-    // じゃんけんの結果をテキストで表示
-    // $("#flowing_box_bottom").text(my_select[my][com_Num]);
-    // 押したボタンvsコンピュータの出した手の結果を言葉でかえす
-    // $("#flowing_box_2").text(my_select[my][com_Num]);
+    }
   </script>
 
 
 </body>
+
 
 </html>

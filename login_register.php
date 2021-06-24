@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <form action="todo_register_act.php" method="POST">
+  <form action="login_register_act.php" method="POST">
     <fieldset>
       <legend>管理者登録画面</legend>
       <div>
@@ -18,7 +18,7 @@
         password: <input type="text" name="password">
       </div>
       <div>
-        <button>Register</button>
+        <button>登録</button>
       </div>
       <a href="login.php">or login</a>
     </fieldset>
